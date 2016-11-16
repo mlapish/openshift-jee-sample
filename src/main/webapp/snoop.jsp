@@ -4,11 +4,14 @@
 	<%@ page import="javax.servlet.http.HttpUtils,java.util.Enumeration" %>
 	<%@ page import="java.lang.management.*" %>
 	<%@ page import="java.util.*" %>
+	<%@ page import="java.net.*" %>
 </HEAD>
 <BODY>
 
 <H1>WebApp JSP Snoop page</H1>
 <img src="images/jbosscorp_logo.png">
+	
+Hostname: <%=InetAddress.getLocalHost().getHostName()%>
 
 <h2>JVM Memory Monitor</h2>
  
