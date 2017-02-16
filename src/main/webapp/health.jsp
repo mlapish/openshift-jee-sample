@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>test-application metrics page</title>
+<title>test-application health page</title>
 </head>
 <body>
-<br>sample_app_total_access_count 20
+
 </body>
 </html>
