@@ -5,7 +5,7 @@
 	id="WebApp_ID" version="2.5">
 	<servlet>
 		<servlet-name>health</servlet-name>
-		<jsp-file>health.jsp</jsp-file>
+		<jsp-file>/health.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>health</servlet-name>
@@ -14,7 +14,7 @@
  
 	<servlet>
 		<servlet-name>metrics</servlet-name>
-		<jsp-file>metrics.jsp</jsp-file>
+		<jsp-file>/metrics.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>metrics</servlet-name>
