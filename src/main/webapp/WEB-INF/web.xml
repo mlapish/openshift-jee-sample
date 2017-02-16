@@ -10,7 +10,7 @@
 	<servlet-mapping>
 		<servlet-name>health</servlet-name>
 		<url-pattern>/health</url-pattern>
-	</servlet-mapping
+	</servlet-mapping>
  
 	<servlet>
 		<servlet-name>metrics</servlet-name>
