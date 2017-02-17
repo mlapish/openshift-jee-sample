@@ -3,7 +3,7 @@
 <%@page import="java.util.*" %>
 <% 
 Random rand = new Random();
-Thread.sleep(rand.nextInt(2000));
+Thread.sleep(rand.nextInt(1000));
 %> 
 {
     "glossary": {
