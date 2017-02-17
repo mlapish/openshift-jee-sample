@@ -3,7 +3,8 @@
 <%@page import="java.util.*" %>
 <%! int n = 0; %>  
 <% 
-request.getSession(true).putValue("requests", n++);
+System.out.println(request.getSession().getAttribute("requests"));
+request.getSession().setAttribute("requests", n++);
 Random rand = new Random();
 Thread.sleep(rand.nextInt(1000));
 %> 
