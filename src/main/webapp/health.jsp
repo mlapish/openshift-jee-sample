@@ -2,8 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@page import="java.util.*" %>
 <%
-Random rand = new Random();
-int n = rand.nextInt(10); 
+int n = 0; 
 %>    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -14,8 +13,9 @@ int n = rand.nextInt(10);
 <body>
 <%
    // Set error code and reason.
-   if (n == 5){
-     System.out.println("Randomizer hit " + n + "system is going down!!");
+   n = n++;
+   if (n > Integer.parseInt(System.getProperty("FAILURE_INTERVAL"))){
+     System.out.println("System is down!!");
      response.sendError(503, "Service is down" );
    }
 %>
