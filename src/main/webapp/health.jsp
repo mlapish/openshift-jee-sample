@@ -14,7 +14,7 @@ int n = 0;
 <%
    // Set error code and reason.
    n = n++;
-   if (n > Integer.parseInt(System.getProperty("FAILURE_INTERVAL"))){
+   if (n > Integer.parseInt(System.getenv("FAILURE_INTERVAL"))){
      System.out.println("System is down!!");
      response.sendError(503, "Service is down" );
    }
