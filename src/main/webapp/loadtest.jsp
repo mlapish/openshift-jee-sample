@@ -3,7 +3,7 @@
 <%@page import="java.util.*" %>
 <%! int n = 0; %>  
 <% 
-session.putValue("requests", n++);
+request.getSession(true).putValue("requests", n++);
 Random rand = new Random();
 Thread.sleep(rand.nextInt(1000));
 %> 
