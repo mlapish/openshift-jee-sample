@@ -21,4 +21,12 @@
 		<url-pattern>/metrics</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>loadtest</servlet-name>
+		<jsp-file>/loadtest.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loadtest</servlet-name>
+		<url-pattern>/glossary</url-pattern>
+	</servlet-mapping>
 </web-app>
