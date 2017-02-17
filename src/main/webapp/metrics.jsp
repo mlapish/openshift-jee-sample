@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" session="true"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,6 +7,6 @@
 <title>test-application metrics page</title>
 </head>
 <body>
-<br>sample_app_total_access_count <% request.getSession().getAttribute("requests"); %>
+<br>sample_app_total_access_count <% application.getAttribute("requests"); %>
 </body>
 </html>
