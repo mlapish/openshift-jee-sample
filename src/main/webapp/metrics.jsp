@@ -7,6 +7,6 @@
 <title>test-application metrics page</title>
 </head>
 <body>
-<br>sample_app_total_access_count 20
+<br>sample_app_total_access_count <% session.getValue("requests"); %>
 </body>
 </html>
