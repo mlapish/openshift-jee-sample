@@ -23,7 +23,7 @@ Hostname: <%=InetAddress.getLocalHost().getHostName()%>
 
 <h2>JVM Memory Monitor</h2>
  
- 
+Total Hits Since Start: <%=n%> 
 <table border="0" width="100%">
  
 <tbody>
