@@ -19,8 +19,9 @@
 <H1>WebApp JSP Snoop page</H1>
 <img src="images/jbosscorp_logo.png">
 
-<br>	
+<p>	
 Hostname: <%=InetAddress.getLocalHost().getHostName()%>
+<br>
 Total Hits Since Start: <%=n%> 
 
 <h2>JVM Memory Monitor</h2>
