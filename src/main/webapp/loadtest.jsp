@@ -1,11 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@page import="java.util.*" %>
+<%@page import="java.util.*"%>  
+
 <%! int n = 0; %>  
 <% 
 application.setAttribute("requests", n++);
 Random rand = new Random();
 Thread.sleep(rand.nextInt(1000));
+//Generate some cpu cycles
+Math.atan(Math.sqrt(Math.pow(10, 10)));
 %> 
 {
     "glossary": {
