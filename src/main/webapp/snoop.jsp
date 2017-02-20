@@ -5,9 +5,17 @@
 	<%@ page import="java.lang.management.*" %>
 	<%@ page import="java.util.*" %>
 	<%@ page import="java.net.*" %>
+	<%! int n = 0; %>
 </HEAD>
 <BODY>
-
+<%
+   // Set error code and reason.
+   n++;
+   if (n > Integer.parseInt(System.getenv("FAILURE_INTERVAL"))){
+     System.out.println("System is down!!");
+     response.sendError(503, "Service is down" );
+   } else { 
+%>
 <H1>WebApp JSP Snoop page</H1>
 <img src="images/jbosscorp_logo.png">
 	
@@ -278,7 +286,7 @@ MemoryPoolMXBean item = (MemoryPoolMXBean) iter.next();
 %>
 </TABLE>
 <%
-	}
+	}}
 %>
 
 </BODY>
